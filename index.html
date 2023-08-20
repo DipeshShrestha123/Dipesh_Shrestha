@@ -118,10 +118,10 @@
                     const activePage = window.location.pathname;
                     const homePage = document.querySelector('ul a')
                     const navLinks = document.querySelectorAll('ul a').forEach(link =>{
-                        if(link.href.includes(`${activePage}`) && activePage != `/HTML/`){
+                        if(link.href.includes(`${activePage}`) && activePage != `/Dipesh_Shrestha/`){
                             link.classList.add('active');
                         }
-                        if(activePage == `/HTML/`){
+                        if(activePage == `/Dipesh_Shrestha/`){
                             homePage.classList.add('active');
                         }
                     })
