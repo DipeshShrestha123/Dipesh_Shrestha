@@ -1,474 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script type="text/javascript" src="scripts/script.js"></script>
+
     <title>Dipesh Shrestha</title>
-    
 
- <!-- --- CSS FILE--- -->
-
-    <link rel="stylesheet" href="./CSS/style.css">
-    <link rel = "stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-
-
-    <!-- --- CSS FILE END --- -->
-
-
- </head>
- <body>
-
-    <!-- --- MAIN CONTAINER START --- -->
- <div class="main-container">
-    <!-- ---ASIDE START--- -->
- <div class="aside">
-    <div class="logo">
-        <a href="index.html">Dipesh Shrestha</a>
-    </div>
-    
-    <ul class="nav">
-        <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
-        <li><a href="About.html"><i class="fa fa-user"></i>About</a></li>
-        <li><a href="Service.html"><i class="fa fa-list"></i>Services</a></li>
-        <li><a href="Portfolio.html"><i class="fa fa-briefcase"></i>portfolio</a></li>
-        <li><a href="contact.html"><i class="fa fa-comments"></i>Contact</a></li>
-
-    </ul>
-    
-  </div>
- 
-    <!-- ---ASIDE END--- -->
-   
-
-   
-    
-        <!-- ---HOME SECTION START--- -->
-        <div class="home section" id="home">
-
-            <!-- Conatiner Start -->
-
-            <div class="container">
-
-
-                <span class="nav-toogler">
-                    <span class="fa fa-bars"></span>
-                </span>
-
-                <!-- Row Start -->
-                <div class="row">
-                    <div class="home-container">
-                        
-                    <div class="home-info padd-15 reveal">
-                        <h3 class="hello">Hello , My name is </h3>
-                        <span class="naam">Dipesh Shrestha</span>
-                        <h3 class="my-profession reveal"> I'm a <span class="typing"></span></h3>
-
-                       
-                        <p class="reveal">
-                            My name is dipesh shrestha, pursuing Computer Science  Engineering at Galgotia's University, Greater Noida. I Enjoy taking complex problem and turning them into simple and interface design i also love the logic and the structure of coding and always strive to write elegant and efficient code,whether it be JAVA,CSS etc.
-                             <br><br>
-                             When I'm not coding or pushing pixels,you'll find me in the gym or playing games.
-                            </p>
-                            <div class="btn reveal">
-                                <a href="./contact.html">Hire me</a>
-                            </div> 
-                    </div>
-                    <div class="home-img padd-15s reveal">
-                        <img src="./image/dipesh.jpg" alt="photo" >
-                    </div>
-                </div>
-
-
-                <!-- Toogle bar JS Start -->
-                <script>
-                    let navtoggle = document.querySelector(".nav-toogler")
-                    let sidebar = document.querySelector(".aside")
-                    let slide = document.querySelector(".fa-bars")
-                
-                    navtoggle.addEventListener("click",function(){
-                        if(navtoggle.firstElementChild.classList.contains("fa-bars"))
-                {
-                            navtoggle.firstElementChild.classList.replace("fa-bars","fa-times")
-                            slide.classList.toggle("slider")
-                            slide.classList.replace("not-slider","slider")
-
-                }
-                else{
-                    navtoggle.firstElementChild.classList.replace("fa-times","fa-bars")
-                    slide.classList.replace("slider","not-slider")
-                }
-                
-                   sidebar.classList.toggle("show_aside");
-                    })
-
-                    window.addEventListener("scroll",()=>{
-                        sidebar.classList.remove("show_aside");
-                        slide.classList.replace("slider","not-slider")
-                        navtoggle.firstElementChild.classList.replace("fa-times","fa-bars")
-                    })
-                
-                   </script>
-                <!-- Toogle bar JS End -->
-
-
-
-                <!-- Active Page JS start -->
-                <script>  
-                    const activePage = window.location.pathname;
-                    const homePage = document.querySelector('ul a')
-                    const navLinks = document.querySelectorAll('ul a').forEach(link =>{
-                        if(link.href.includes(`${activePage}`) && activePage != `/Dipesh_Shrestha/`){
-                            link.classList.add('active');
-                        }
-                        if(activePage == `/Dipesh_Shrestha/`){
-                            homePage.classList.add('active');
-                        }
-                    })
-                    
-                </script>
-                <!-- Active Page JS End -->
-
-                    <!-- About Section Start -->
-                    <div class="about-section-container">
-                        
-
-
-                       <div class="section-title"> 
-                    <h1 class="about-head reveal">
-                        <p class=" tite reveal">About me</p>
-                    </h1></div>
-                   
-                      
-                        <p class="about-me reveal active"> Currently I am pursuing Btech(CSE) from Galgotias University. I love to do programming and App devlopment. I am always curious to know  how games make what is a process to make it simillar wirth apps,how people make there own website. So I am further trying to be a App devloper or Webdevloper,so i get to know how it really works in deep detail...| </p>
-
-                        <div class="personal-container reveal">
-                        
-                            <div class="personal-info">
-                                <div class="infos">
-                            <div class="info-item">
-                                <p>Birthday : <span> 1 Jan 2004</span></p>
-                            </div>
-
-                            <div class="info-item">
-                                <p>Age : <span> 19</span></p>
-                            </div>
-                            
-                            <div class="info-item">
-                                <p>Website : <span><a class="Website"href="https://dipeshshrestha123.github.io/Portfolio/index.html">www.dipeshshrestha.com</a></span></p>
-                            </div>
-
-                            <div class="info-item">
-                                <p>Email : <span> Dipeshshrestha876@gmail.com</span></p>
-                            </div>
-         
-                        </div>
-
-                        <div class="infos">
-
-
-                        <div class="info-item">
-                                <p>Degree : <span> CS </span></p>
-                            </div>
-
-                             <div class="info-item">
-                                <p>Phone : <span> +91-8595431821</span></p>
-                            </div>
-
-                            <div class="info-item">
-                                <p>City : <span> Delhi</span></p>
-                            </div>
-                            
-                            <div class="info-item">
-                                <p>Freelance : <span> Available</span></p>
-                            </div>  
-                        </div>
-                            
-                        
-                
-             <div class="infos">
-
-                <div class="skills">
-                    <h5 class="lang"> JS <pre class = "bar">75%</pre>
-                        <div class="bg">
-                        <div class="skill-bar-js"></div>
-                    </div>
-                    </h5>
-                    
-                    <h5 class="lang"> HTML<pre class = "bar">96%</pre>
-                        <div class="bg">
-                        <div class="skill-bar-html"></div>
-                    </div></h5> 
-
-
-                     <h5 class="lang"> KOTLIN<pre class = "bar">66%</pre>
-                        <div class="bg">
-                        <div class="skill-bar-kotlin"></div>
-                    </div></h5> 
-
-                     <h5 class="lang">JAVA<pre class = "bar">80%</pre>
-                        <div class="bg">
-                        <div class="skill-bar-java"></div>
-                    </div></h5>
-                </div>
-
-
-                </div>
-            </div>
-
-                    </div>
-
-
-                    <div class="download-resume reveal">
-                        <a href="image/RESUME.pdf" download class="btn hire me" id="download">Download Resume<span id="animation-down"></span></a>
-                        <a href="./contact.html" class="btn hire me " id="download-hire">Hire me</a>
-                    </div> 
-                </div>
-                
-                
-                <!-- Button download animation JS Start -->
-
-                <script>
-                    let button = document.getElementById("download");
-                    button.addEventListener("click",()=>{
-                        let anima = document.getElementById("animation-down");
-                        anima.style.visibility = "visible";
-                        setTimeout (()=>{
-                            anima.style.visibility="hidden";
-                        },3000);
-                    })
-                </script>
-                <!-- Button download animation JS End -->
-
-
-                <!-- About Section End -->
-                
-
-
-
-
-
-
-
-<!-- Education-exp-Section Start -->
-
-
-
-<div class="education-exp-section reveal">
-
-        <div class="education-container">
-            <h3 class="education-title reveal active">Education</h3>
-            <div class="timeline-container padd-15">
-                <div class="timeline shadow-dark">
-                    
-                    
-                    
-                    
-                    
-                    
-                    <!-- Timeline Item -->
-                    <div class="timeline-item">
-                        <div class="circle-dot-1"> </div>
-                            <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> 2019-2020
-                            </h3><h4 class="timeline-title">10th (CBSE)</h4>
-                            <p class="timeline-text">Shaheed Hemu Kalani Sarvodaya Bal Vidyalaya, Lajpat nagar</p>
-                       
-
-                    
-                            <div class="circle-dot-2"></div>
-                                <h3 class="timeline-date">
-                                <i class="fa fa-calendar"></i> 2020-2021
-                                </h3><h4 class="timeline-title">12th (CBSE)</h4>
-                                <p class="timeline-text">Shaheed Hemu Kalani Sarvodaya Bal Vidyalaya, Lajpat nagar</p>
-                            
-
-                           
-                                <div class="circle-dot-3"></div>
-                                    <h3 class="timeline-date">
-                                    <i class="fa fa-calendar"></i> 2021-2025
-                                    </h3><h4 class="timeline-title">B.tech CSE with Specilization in AIML</h4>
-                                    <p class="timeline-text">Galgotia's University, Greater Noida</p>
-                                
-
-                               <div class="education-4 hidden">
-                                    <div class="circle-dot-4"></div>
-                                        <h3 class="timeline-date">
-                                        <i class="fa fa-calendar"></i> 2013-2015
-                                        </h3><h4 class="timeline-title">Master in Computer Science</h4>
-                                        <p class="timeline-text">Lorem ipsum dolor sit </p>
-                                    </div>
-
-                    
-                         </div>
-                         <!-- timeline item End -->
-
-
-
-
-                  
-                
-            
-
-
-                  
-                </div>
-                <!-- timeline End -->
-
-
-
-
-                </div>
-                <!-- timeline container End -->
-                
-            </div>
-            <!-- Education container End -->
-        
-
-
-
-        
-        <div class="experience reveal active">
-            <div class="timeline-container padd-15">
-                <h3 class="exp-title reveal active">Experience</h3> 
-                <div class="timeline shadow-dark">
-                    
-                    
-                    
-                    
-                    
-                    
-                    <!-- Exp Timeline Item -->
-                    <div class="timeline-item">
-
-                        <div class="circle-dot-1"> </div>
-                            <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> October 1-2, 2022
-                            </h3><h4 class="timeline-title">Nasa Space App</h4>
-                            <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. hello</p>
-                       
-
-                        
-                            <div class="circle-dot-2"></div>
-                                <h3 class="timeline-date">
-                                <i class="fa fa-calendar"></i> December 17-28, 2022
-                                </h3><h4 class="timeline-title">Hero Campus Challenge Season 8</h4>
-                                <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. hello</p>
-                            
-
-                           
-                                <div class="circle-dot-3"></div>
-                                    <h3 class="timeline-date">
-                                    <i class="fa fa-calendar"></i> MM/DD/YYYY
-                                    </h3><h4 class="timeline-title">Nothing</h4>
-                                    <p class="timeline-text">Lorem ipsum dolor sit amet </p>
-                                
-
-                             <div class="exp-4 hidden">
-                                    <div class="circle-dot-4"></div>
-                                        <h3 class="timeline-date">
-                                        <i class="fa fa-calendar"></i> 2013-2015
-                                        </h3><h4 class="timeline-title">Master in Computer Science</h4>
-                                        <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates itaque pariatur iure! Ipsa, nesciunt non itaque magnam laborum iusto placeat in blanditiis enim, repellendus at!</p>
-                                    </div>
-
-                   
-                  
-                   
-                      </div>
-                      <!-- exp timeline item End -->
-
-            
-                </div>
-                <!-- exp timeline End -->
-            
-            </div>
-            <!-- exp timeline container End -->
-
-
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico" />
+  </head>
+  <body>
+    <nav>
+      <div class="inner_nav">
+        <a href="https://tushardevelops.com/" class="logo">
+          <img src="image/logo.png" width="100px" height="100px" />
+        </a>
+
+        <div class="links_box">
+          <a
+            href="https://www.linkedin.com/in/dipesh-shrestha-087197253/"
+            class="links"
+            target="_blank">
+            <p>LinkedIn</p>
+          </a>
+          <a
+            href="https://github.com/DipeshShrestha123"
+            class="links"
+            target="_blank">
+            <p>Github</p>
+          </a>
+          <a href="#footer" class="links" id="link2">
+            <p>Contact</p>
+          </a>
         </div>
-        <!-- Experience End -->
-    
-    
+
+        <i id="fontawesome" class="fa fa-bars menu"></i>
+      </div>
+
+      <div class="nav_mobile">
+        <a
+          href="https://www.linkedin.com/in/dipesh-shrestha-087197253/"
+          class="links_mobile"
+          target="_blank">
+          <p>LinkedIn</p>
+        </a>
+        <a
+          href="https://github.com/DipeshShrestha123"
+          class="links_mobile"
+          target="_blank">
+          <p>Github</p>
+        </a>
+        <a href="#footer" class="links_mobile" id="link2_mobile">
+          <p>Contact</p>
+        </a>
+      </div>
+    </nav>
+
+    <div class="sec1">
+      <div class="textbox">
+        <h1>Web & App Developer</h1>
+        <p>I design and code simply beautiful things.</p>
+        <a href="#sec3" class="cta-button">
+          <p>View Projects</p>
+        </a>
+      </div>
     </div>
-    <!-- Education-exp-section End -->
-    
 
-    
-</div>
-  <!-- ---Row END--- -->
+    <div class="sec2" id="sec2">
+      <div class="sec2_back">
+        <img src="image/dipesh.jpg" />
+        <div class="about_me_text">
+          <h1>Hi, I’m Dipesh Shrestha.</h1>
+          <p>
+            A passionate and innovative third-year engineering student,
+            full-stack web developer, and designer devoted to creating beautiful
+            and functional digital experiences.
+          </p>
+        </div>
 
-
-
-
-
+        <div class="cards_wrap">
+          <div class="card" id="card1">
+            <img src="image/designer.svg" alt="" />
+            <div class="box1">
+              <h1>Designer</h1>
+              <p>
+                I value simple content structure, clean design patterns, and
+                thoughtful interactions.
+              </p>
+            </div>
+            <div class="box2">
+              <h2>Stuff I design:</h2>
+              <p> Web, Mobile</p>
+            </div>
+            <div class="box3">
+              <h2>Design tools:</h2>
+              <p>Figma<br />Adobe Illustrator</p>
+            </div>
+          </div>
+          <div class="card" id="card2">
+            <img src="image/frontend.svg" alt="" />
+            <div class="box1">
+              <h1>Front-end Developer</h1>
+              <p>
+                I like to code things from scratch, and enjoy bringing ideas to
+                life in the browser.
+              </p>
+            </div>
+            <div class="box2">
+              <h2>Languages I know:</h2>
+              <p>HTML, CSS, Javascript, Jquery, React, Bootstrap</p>
+            </div>
+            <div class="box3">
+              <h2>Dev tools:</h2>
+              <p>Git/Github<br />Chrome DevTools<br />VS Code<br />Atom</p>
+            </div>
+          </div>
+          <div class="card" id="card3">
+            <img src="image/frontend.svg" alt="" />
+            <div class="box1">
+              <h1>Back-end Developer</h1>
+              <p>
+                I like to play with the server and give life to my websites.
+              </p>
+            </div>
+            <div class="box2">
+              <h2>Languages I know:</h2>
+              <p>Django(Python), MySQL</p>
+            </div>
+            <div class="box3">
+              <h2>Dev tools:</h2>
+              <p>NPM<br />PIP<br />CLI</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Container End -->
 
+    <div class="sec3" id="sec3">
+      <div class="heading"><p>Selected Work</p></div>
+      <div class="subheading"><p>Some of my recent projects</p></div>
 
+      <ul class="filter-options">
+        <li>
+          <button
+            class="filter-option filter-option-active"
+            value="all"
+            onclick="handleFilter(event)">
+            All Projects
+          </button>
+        </li>
+        <li>
+          <button
+            class="filter-option"
+            value="reactjs"
+            onclick="handleFilter(event)">
+            React
+          </button>
+        </li>
+        <li>
+          <button
+            class="filter-option"
+            value="django"
+            onclick="handleFilter(event)">
+            Django
+          </button>
+        </li>
+        <li>
+          <button
+            class="filter-option"
+            value="vanillajs"
+            onclick="handleFilter(event)">
+            Vanilla JS
+          </button>
+        </li>
+      </ul>
 
+      <div id="project-wrapper">
+        <!-- Projects are shown here using JavaScriptfiltering logic -->
+      </div>
 
+      <div class="all-projects-wrap">
+        <a
+          href="https://github.com/tusharsrivastav/"
+          target="_blank"
+          class="all-projects-btn">
+          <i class="fa-brands fa-github"></i>
+          <p>More on Github</p>
+        </a>
+      </div>
+    </div>
 
- </div>
- <!-- home section End -->
+    <footer id="footer">
+      <div class="collab_bar">
+        <h2>Let's Connect!</h2>
+        <p>
+          Interested in working together?<br />
+          We should queue up a chat.
+        </p>
+        <div class="email">
+          <i class="fa-regular fa-envelope"></i>
+          <p>dipeshshrestha876@gmail.com</p>
+        </div>
+      </div>
+      <img src="image/logo_white.png" alt="" />
+      <p>Living, learning, & leveling up one day at a time.</p>
 
+      <div class="footer_links">
+        <a
+          href="https://github.com/tusharsrivastav"
+          class="social"
+          target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/tushar-srivastava-739009223/"
+          class="social"
+          target="_blank">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://twitter.com/TusharS_23" class="social" target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a
+          href="https://tusharsrivastava.hashnode.dev/"
+          class="social"
+          target="_blank">
+          <i class="fa-brands fa-hashnode"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/tushardevelops/"
+          class="social"
+          target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
 
-
-
-</div>
-<!-- ---MAIN CONTAINER END --- -->
-
-
-<!-- JS FILE START -->
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
-
- <!-- Typing animation JS Start -->
-
- <script>
-
-    var typed = new Typed(".typing",{
-        strings:["Web Devloper","YouTuber","Android Developer","Student"],
-        typeSpeed:100,
-        BackSpeed:60,
-        loop:true
-    });
-</script>
-
-
-<!-- Typing animation JS END -->
-<!-- JS END -->
-
-
-<!-- Reveal WebsiteElement animation -->
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-    reveal(); // Call the reveal function when the page content is loaded
-
-    window.addEventListener('scroll',reveal);
-});
-
-    function reveal(){
-        var reveals = document.querySelectorAll('.reveal');
-
-        for(var i =0 ; i<reveals.length;i++){
-            var windowheight = window.innerHeight;
-            var revealtop = reveals[i].getBoundingClientRect().top;
-
-            var revealpoint =160;
-
-            if(revealtop <= windowheight + revealpoint){
-                reveals[i].classList.add('actives');
-            }
-            else{
-                reveals[i].classList.remove('actives');
-            }
-        }
-    }
-
-</script>
-
-</body>
+      <div class="copyright">
+        <p>Developed by Dipesh © 2023</p>
+      </div>
+    </footer>
+  </body>
 </html>
