@@ -15,7 +15,7 @@ const projects = [
     title: "Weather Web App",
     description:
       "A simple weather application that displays the current weather forecasts based on geolocation or search",
-    linkgithub: "https://github.com/DipeshShrestha123/Moon-Savers",
+    linkgithub: "https://github.com/DipeshShrestha123/Weather_App",
     linklive: "https://dipeshshrestha123.github.io/Weather_App/",
     filter: "vanillajs",
   },
