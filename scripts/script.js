@@ -1,6 +1,6 @@
 const projects = [
   {
-    img: "../image/foodexpress.png",
+    img: "./image/foodexpress.png",
     alt: "Food Delivery App",
     title: "Food Delivery App",
     description:
@@ -10,7 +10,7 @@ const projects = [
     filter: "Android App",
   },
   {
-    img: "../image/Weather.png",
+    img: "./image/Weather.png",
     alt: "Weather img",
     title: "Weather Web App",
     description:
@@ -20,7 +20,7 @@ const projects = [
     filter: "vanillajs",
   },
   {
-    img: "../image/Todo.jpg",
+    img: "./image/Todo.jpg",
     alt: "TO-DO",
     title: "TO-DO",
     description:"A simple To-Do web app made using HTML, CSS, and JavaScript.",
@@ -29,7 +29,7 @@ const projects = [
     filter: "React",
   },
   {
-    img: "../image/quiz.png",
+    img: "./image/quiz.png",
     alt: "quiz-generator",
     title: "Quiz Generator",
     description:
@@ -39,7 +39,7 @@ const projects = [
     filter: "React",
   },
   {
-    img: "../image/temp-converter.png",
+    img: "./image/temp-converter.png",
     alt: "temperature-converter",
     title: "Temperature Converter",
     description:
@@ -49,7 +49,7 @@ const projects = [
     filter: "vanillajs",
   },
   {
-    img: "../image/background-generator.jpeg",
+    img: "./image/background-generator.jpeg",
     alt: "background-generator",
     title: "Background Generator",
     description:
